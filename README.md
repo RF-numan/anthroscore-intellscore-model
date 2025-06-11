@@ -1,20 +1,19 @@
 # AnthroScore & IntellScore Evaluation
 
-This project evaluates AI-generated responses using two custom scoring metrics: **AnthroScore** and **IntellScore**. These metrics are designed to assess how *human-like* (anthropomorphic) and *informative* the responses are, based on emotional content, pronoun usage, length, and sentiment.
+This project was built from scratch to evaluate AI-generated responses based on how **human-like** (AnthroScore) and **informative** (IntellScore) they are. It uses custom scoring functions, sentiment analysis, and basic NLP techniques to analyze and rank chatbot-style responses.
 
-Originally developed as a Google Colab notebook, this script has been adapted for local use.
+## 🧠 What It Does
 
-## ✨ What It Does
-
-- **AnthroScore**: Measures how emotionally supportive and personal the response is by counting first-person pronouns, emotional keywords, and overall sentiment.
-- **IntellScore**: Assesses the informativeness of a response using word count and sentiment polarity.
-- Uses `TextBlob` for sentiment analysis.
-- Ranks responses from most to least anthropomorphic.
+- **AnthroScore** evaluates emotional tone and personal language (e.g., first-person pronouns, emotional keywords, sentiment).
+- **IntellScore** scores informativeness based on word count and sentiment quality.
+- Responses are ranked by anthropomorphic traits for analysis and comparison.
+- Built entirely in Python using `TextBlob`, `nltk`, and `pandas`.
 
 ## 📦 Dependencies
 
-Install required packages:
+Install required libraries:
 
 ```bash
-pip install textblob
+pip install textblob pandas nltk
 python -m textblob.download_corpora
+
